@@ -10,6 +10,7 @@ reverso("Hello World", ReversoLanguages.English, ReversoLanguages.French).then((
 ```
  
  ### Exemple Response Object
+ 
 ```json
 {
     "id": "e8aeb41e-9cf6-4288-81a4-cbfae8195c76",
@@ -140,6 +141,7 @@ reverso("Hello World", ReversoLanguages.English, ReversoLanguages.French).then((
 ```
 
 ### Exemple Response Error Object
+
 ```json
 {
   errors: { TargetLanguage: [ 'to_length' ] },
