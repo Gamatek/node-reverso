@@ -37,7 +37,7 @@ const ReversoLanguages = {
  *     @param {string} options.origin The origin of the data. Default value is "translation.web".
  *     @param {boolean} options.contextResults Indicates whether to include contextual results. Default value is false.
  *     @param {boolean} options.languageDetection Indicates whether language detection is enabled. Default value is false.
- * @returns {Promise<String>} The translated text
+ * @returns {Promise<Object>} The api response body.
  */
 const reverso = (
     input,
@@ -77,7 +77,7 @@ const reverso = (
         res.on("data", (chunk) => chunks.push(chunk));
         res.on("end", () => {
             const bodyParsed = JSON.parse(Buffer.concat(chunks).toString("utf-8"));
-            resolve(bodyParsed.translation[0], bodyParsed);
+            resolve(bodyParsed);
         });
     });
 
