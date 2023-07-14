@@ -144,10 +144,14 @@ reverso("Hello World", ReversoLanguages.English, ReversoLanguages.French).then((
 
 ```json
 {
-  errors: { TargetLanguage: [ 'to_length' ] },
-  type: 'https://tools.ietf.org/html/rfc7231#section-6.5.1',
-  title: 'One or more validation errors occurred.',
-  status: 400,
-  traceId: '00-2b5babb18ee518f36cf0bbfa3d7cc91c-f923c47d60e25bad-00'
+    "errors": {
+        "TargetLanguage": [
+            "to_length"
+        ]
+    },
+    "type": "https://tools.ietf.org/html/rfc7231#section-6.5.1",
+    "title": "One or more validation errors occurred.",
+    "status": 400,
+    "traceId": "00-2b5babb18ee518f36cf0bbfa3d7cc91c-f923c47d60e25bad-00"
 }
 ```
