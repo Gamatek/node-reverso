@@ -8,10 +8,9 @@ reverso("Hello World", ReversoLanguages.English, ReversoLanguages.French).then((
     console.log(translation[0]);
 });
 ```
-
-### Exemple Response Object
+ 
 <details>
-    <summary>Titre réduit</summary>
+    <summary>Exemple Response Object</summary>
 ```json
 {
     "id": "e8aeb41e-9cf6-4288-81a4-cbfae8195c76",
