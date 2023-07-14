@@ -4,7 +4,7 @@
 ```js
 const { reverso, ReversoLanguages } = require("./reverso");
 
-reverso("Hello World", ReversoLanguages.English, ReversoLanguages.French).then(({ translation ) => {
+reverso("Hello World", ReversoLanguages.English, ReversoLanguages.French).then(({ translation }) => {
     console.log(translation[0]);
 });
 ```
