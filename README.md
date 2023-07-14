@@ -9,8 +9,7 @@ reverso("Hello World", ReversoLanguages.English, ReversoLanguages.French).then((
 });
 ```
  
-<details>
-    <summary>Exemple Response Object</summary>
+ ### Exemple Response Object
 ```json
 {
     "id": "e8aeb41e-9cf6-4288-81a4-cbfae8195c76",
@@ -139,4 +138,14 @@ reverso("Hello World", ReversoLanguages.English, ReversoLanguages.French).then((
     "timeTaken": 217
 }
 ```
-</details>
+
+### Exemple Response Error Object
+```json
+{
+  errors: { TargetLanguage: [ 'to_length' ] },
+  type: 'https://tools.ietf.org/html/rfc7231#section-6.5.1',
+  title: 'One or more validation errors occurred.',
+  status: 400,
+  traceId: '00-2b5babb18ee518f36cf0bbfa3d7cc91c-f923c47d60e25bad-00'
+}
+```
