@@ -1,5 +1,10 @@
 # node-reverso
 
+### Setup
+
+* Dowload `reverso.js` from this github.
+* `npm i axios`
+
 ### Usage
 ```js
 const { reverso, ReversoLanguages } = require("./reverso");
