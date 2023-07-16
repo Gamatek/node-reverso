@@ -9,9 +9,14 @@
 ```js
 const { reverso, ReversoLanguages } = require("./reverso");
 
-reverso("Hello World", ReversoLanguages.English, ReversoLanguages.French).then(({ translation }) => {
-    console.log(translation[0]);
-});
+reverso("Hello World", ReversoLanguages.English, ReversoLanguages.French).then((translation, res) => {
+    console.log(translation);
+
+    // Advance
+    console.log(res);
+}).catch((err) => {
+    console.log(err);
+};
 ```
  
  ### Exemple Response Object
